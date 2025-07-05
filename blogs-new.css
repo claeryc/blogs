@@ -1,0 +1,205 @@
+html {
+    background: #f5f7f8;
+    font-family: system-ui;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  header {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto 20px;
+  }
+
+  .band {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: stretch;
+  }
+
+  .card-bp {
+    background: white;
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    top: 0;
+    transition: all 0.1s ease-in;
+  }
+
+  .card-bp:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-bp article {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-bp h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+  }
+
+  .card-bp p {
+    flex: 1;
+    line-height: 1.4;
+  }
+
+  .card-bp span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.2em;
+  }
+
+  .thumb {
+    padding-bottom: 55%;
+    background-size:cover;
+    background-position: center center;
+    /* margin:5px 5px;
+    border-radius: 5px; */
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  /* .center-items {
+        display: block;
+    justify-content: center;
+    justify-items: center;
+  } */
+
+  .load-more-container {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .load-more {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+
+  /* @media (min-width: 60em) {
+    .band {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .item-1 {
+      grid-column: span 2;
+    }
+
+    .item-1 h1 {
+      font-size: 24px;
+    }
+  } */
+
+  @media (max-width: 768px) {
+    .band {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (min-width: 60em) {
+    .band {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .item-1 {
+      grid-column: span 2;
+    }
+  
+    .item-1 h1 {
+      font-size: 24px;
+    }
+  }
+
+
+  /* From Uiverse.io by satyamchaudharydev */ 
+/* inspired form gumroad website */
+.filter-btn {
+    --bg: #000;
+    --hover-bg: #ff90e8;
+    --hover-text: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+    margin-top: 15px;
+  }
+  
+  .filter-btn:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+  }
+  
+  .filter-btn:active {
+    transform: translate(0);
+    box-shadow: none;
+  }
+  
+
+  .topic-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    margin-right: 5px;
+    border: 1px solid black;
+    border-radius: 999px;
+    font-size: 0.85em;
+    color: black;
+    background-color: transparent;
+  }
+
+  .genre-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    margin-right: 5px;
+    border: 1px solid black;
+    border-radius: 999px;
+    font-size: 0.85em;
+    color: black;
+    background-color: transparent;
+  }
+
+  /* .card-bp .topic-badge {
+    color: rgb(229, 130, 130);
+    border-color: rgb(229, 130, 130);
+  } */
+  
+  .topic-container {
+    margin-top: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }

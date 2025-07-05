@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../blogposts.css">
+  <meta charset="UTF-8" />
+  <title>Blog Post</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+<body>
+
+    <header>
+        <div class="post-header" id="post-header">
+        <h1 class="header" id="post-title">Loading...<span class="name-wrapper"><span id="scrambleName"></span></span></h1>
+        </div>
+    </header>
+
+    <div class="content-center">
+  <div>
+    <p class="description desc-box" id="post-description">Loading description...</p>
+  </div>
+  </div>
+
+  <script>
+    async function loadPost() {
+      const currentFileName = location.pathname.split('/').pop();
+
+      try {
+        const res = await fetch('../articles.json');
+        const posts = await res.json();
+        const post = posts.find(p => p.link.includes(currentFileName));
+
+        if (!post) {
+          document.getElementById('post-title').textContent = "Post not found";
+          return;
+        }
+
+        // Set title, description, and image
+        document.getElementById('post-title').textContent = post.title;
+        document.getElementById('post-description').textContent = post.description;
+        document.getElementById('post-header').style.backgroundImage = `url('../src/images/${post.image}')`;
+
+        // Load full HTML content of the post from the file
+        const htmlRes = await fetch(`./${currentFileName}`);
+        const htmlText = await htmlRes.text();
+
+      } catch (err) {
+        console.error(err);
+        document.getElementById('post-title').textContent = "Error loading post.";
+      }
+    }
+
+    loadPost();
+  </script>
+
+<main id="main">
+<div class="content-center">
+<p>
+  大家好，今天我想给大家讲一讲我在泰国旅行的经历。
+
+  去年我去了泰国，那是我第二次去这个国家。第一次去的时候我觉得有点无聊，也没有认识什么新朋友。其实当时我也不太想认识别人，因为我以前比较内向。
+  
+  虽然是这样，去年我决定试着和别人交朋友。    
+</p>
+</div>
+
+</main>
+
+<div class="content-center">
+<div class="split-container">
+    <div class="split-left">
+      <h2 style="margin-top: 0;">第一周到第二周</h2>
+      <p>
+        第一周，我一个人去了几家饭馆，尝试了很多泰国菜。我最喜欢的是 Pad Thai，是一个泰国朋友推荐的。
+        第二周，我在超市看到一个看起来像中国人的人，就走过去问他是不是中国人。他用汉语回答我，我们很快聊了起来。
+
+        后来我们一起去了一家爵士音乐酒吧。到了那里以后，我们认识了很多中国人。那里的气氛很热闹，音乐也特别好听！那是我第一次听爵士音乐。
+
+        我们一边喝啤酒一边听音乐，后来他们还带我们去了其他酒吧。那天晚上我们玩得很久，虽然很累，但真的特别开心。  
+      </p>
+    </div>
+    <div class="split-right">
+        <img id="image" style="margin-left: 5px" src="https://img.12go.asia/0/fit/1000/0/ce/0/plain/s3://12go-web-static/static/images/upload-media/5549.jpeg">
+    </div>
+  </div>
+
+  <p>
+    我觉得这次泰国旅行对我有很大的影响。现在的我不再那么内向了。
+
+    旅行结束后，我就打算去中国看望我新认识的朋友。我也觉得，如果想和他们更好地交流，我应该去中国学习汉语！
+    </p>  
+  </div>
+
+
+</body>
+</html>

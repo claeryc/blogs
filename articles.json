@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "title": "My Vaction in Thailand",
+      "topic": ["#travel", "#self-growth"],
+      "link": "/posts/post-1.html",
+      "image": "pic4.jpeg",
+      "description": "My personal story about the first steps of becoming more extroverted by using Chinese to communicate with strangers."
+    },
+    {
+      "id": 2,
+      "title": "Design Process of this Website",
+      "topic": ["#travel", "#student life"],
+      "link": "https://webdesign.tutsplus.com/articles/how-to-conduct-remote-usability-testing--cms-27045",
+      "image": "cycle.png",
+      "description": "We’ll be putting things together so that as you scroll down from the top of the page you’ll see an “Alien Lander”."
+    },
+    {
+      "id": 3,
+      "title": "Recent Projects that I made + upcoming ones!",
+      "topic": ["#coding", "#games"],
+      "link": "https://design.tutsplus.com/articles/envato-tuts-community-challenge-created-by-you-july-edition--cms-26724",
+      "image": "firstgame.png",
+      "description": "Welcome to our monthly feature of fantastic tutorial results created by you, the Envato Tuts+ community!"
+    },
+    {
+      "id": 4,
+      "title": "My Life in China - 1st Semester Recap",
+      "topic": ["#travel", "#student life"],
+      "link": "https://webdesign.tutsplus.com/tutorials/how-to-code-a-scrolling-alien-lander-website--cms-26826",
+      "image": "pic5.jpeg",
+      "description": "We’ll be putting things together so that as you scroll down from the top of the page you’ll see an “Alien Lander”."
+    },
+    {
+      "id": 5,
+      "title": "TTRPG - Virtual RPG - a new Home Brew project",
+      "topic": ["#travel", "#student life"],
+      "link": "https://design.tutsplus.com/tutorials/stranger-things-inspired-text-effect--cms-27139",
+      "image": "ttrpg.webp",
+      "description": "We started to build our first homebrew version of our Dungeons and Dragons TTRPG. Have a sneek-peek in the process and be one of the first, to play!"
+    },
+    {
+      "id": 6,
+      "title": "Cyclethon - 50km cycling in China",
+      "topic": ["#travel", "#student life"],
+      "link": "https://photography.tutsplus.com/articles/5-inspirational-business-portraits-and-how-to-make-your-own--cms-27338",
+      "image": "pic6.jpg",
+      "description": "We’ll be putting things together so that as you scroll down from the top of the page you’ll see an “Alien Lander”."
+    },
+    {
+      "id": 7,
+      "title": "My Semester Break - Recap of my Life and Experiences in China",
+      "topic": ["#travel", "#student life", "#ttrpg"],
+      "link": "https://webdesign.tutsplus.com/articles/notes-from-behind-the-firewall-the-state-of-web-design-in-china--cms-22281",
+      "image": "secondgame.png",
+      "description": "We’ll be putting things together so that as you scroll down from the top of the page you’ll see an “Alien Lander”."
+    }
+  ]

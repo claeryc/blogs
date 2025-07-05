@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "title": "Baldur's Gate 3",
+        "topic": ["game"],
+        "genre": ["rpg", "adventure"],
+        "description": "Let's dive into the preparation phase of my student life in China.",
+        "image": "baldursgate.jpg",
+        "rating": "✦✦✦✦✦",
+        "link": "posts/post-1.html"
+    },
+    {
+        "id": 2,
+        "title": "Norwegian Woods",
+        "topic": ["book"],
+        "genre": ["drama","thriller"],
+        "description": "In this week we are testing our current HSK Level before the classes start.",
+        "image": "norwegianwoods.webp",
+        "rating": "✦✦✦✦✧",
+        "link": "posts/post-2.html"
+    },
+    {
+        "id": 3,
+        "title": "Lord of the Ring",
+        "topic": ["movie"],
+        "genre": ["fantasy"],
+        "description": "Mixue has one of the greatest revenues in fastfood, but why?.",
+        "image": "LotR.webp",
+        "rating": "✦✦✦✦✧",
+        "link": "posts/post-2.html"
+      },
+      {
+        "id": 4,
+        "title": "Arcane",
+        "topic": ["movie"],
+        "genre": ["animation"],
+        "description": "Mixue has one of the greatest revenues in fastfood, but why?.",
+        "image": "arcane.jpeg",
+        "rating": "✦✦✦✦✧",
+        "link": "posts/post-2.html"
+      }
+  ]
