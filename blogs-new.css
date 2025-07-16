@@ -70,8 +70,6 @@ html {
     padding-bottom: 55%;
     background-size:cover;
     background-position: center center;
-    /* margin:5px 5px;
-    border-radius: 5px; */
   }
 
   .item {
@@ -82,12 +80,6 @@ html {
   .hidden {
     display: none;
   }
-
-  /* .center-items {
-        display: block;
-    justify-content: center;
-    justify-items: center;
-  } */
 
   .load-more-container {
     text-align: center;
@@ -140,9 +132,6 @@ html {
     }
   }
 
-
-  /* From Uiverse.io by satyamchaudharydev */ 
-/* inspired form gumroad website */
 .filter-btn {
     --bg: #000;
     --hover-bg: #ff90e8;
@@ -191,11 +180,6 @@ html {
     color: black;
     background-color: transparent;
   }
-
-  /* .card-bp .topic-badge {
-    color: rgb(229, 130, 130);
-    border-color: rgb(229, 130, 130);
-  } */
   
   .topic-container {
     margin-top: 0.5em;

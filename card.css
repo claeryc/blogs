@@ -3,24 +3,17 @@
             font-family: 'Playfair Display', serif;
         }
 
-        /* .card-wrapper {
-            width: 100%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            padding: 2rem;
-        } */
         .card-wrapper {
             margin-left: 1rem;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
-            gap: 1rem; /* optional spacing between cards */
+            gap: 1rem;
           }
           
           .card-container {
             flex: 1 1 calc(33.33% - 1rem); /* 3 cards per row on large screens */
-            max-width: 300px;              /* same as before */
+            max-width: 300px;
           }
           
           /* Medium screens: 2 cards per row */
@@ -30,7 +23,6 @@
             }
           }
           
-          /* Small screens: 1 card per row */
           @media (max-width: 600px) {
             .card-container {
               flex: 1 1 100%;

@@ -2,11 +2,11 @@ const tooltip = document.getElementById("tooltip");
 
 // Optional: assign tooltips to countries
 const tooltips = {
-  DE: "Germany – Lived here",
-  CN: "China – Went here 3 times",
-  FR: "France – Visited Paris",
-  JP: "Japan – Want to visit",
-  TH: "Thailand – Visited Chiang Mai"
+  DE: "Germany – lived here",
+  CN: "China – lived here & went here 3 times",
+  FR: "France – visited Paris",
+  JP: "Japan – want to visit",
+  TH: "Thailand – visited Chiang Mai"
 };
 
 document.querySelectorAll(".map path").forEach(path => {

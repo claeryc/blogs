@@ -9,14 +9,14 @@ body.no-scroll {
   text-align: center;
 }
 
-/* #image {
-  width: 100%;
-  height: auto;
-  max-height: 400px;
-  display: block;
-  max-width: 100%;
-  border-radius: 8px;
-} */
+.center-container {
+  width: 80%; justify-content: center; margin: 8px auto;
+  margin-bottom: 50px;
+}
+
+.logo-title {
+  padding: 0;
+}
 
 #image {
   max-height: 600px;
@@ -25,27 +25,26 @@ body.no-scroll {
   max-width: 100%;
   display: block;
   margin: 0 auto;
-  object-fit: contain; /* Ensures it scales nicely inside bounds */
-  border-radius: 8px; /* Optional */
+  object-fit: contain; 
+  border-radius: 8px; 
 }
-.game {
+/* .game {
   max-height: 600px;
   width: 300px;
   height: auto;
   margin: auto;
-  object-fit: contain; /* Ensures it scales nicely inside bounds */
-  border-radius: 8px; /* Optional */
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 .game-block {
   flex: 1 1 300px;
   text-align: center;
   max-width: 400px;
-}
+} */
 
 body {
     margin: 0;
-    /* font-family: sans-serif; */
     font-family: 'Inter', sans-serif;
     background: #f5f6f7;
   }
@@ -54,16 +53,8 @@ body {
     font-family: 'Playfair Display', serif;
   }
 
-/* #main {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    width: 100%;
-    box-sizing: border-box;
-} */
 #main {
-  display: block; /* Don't use flex here unless you need it */
+  display: block; 
   margin: 0 auto;
   padding: 20px 20px 10px 20px;
   width: 100%;
@@ -72,7 +63,6 @@ body {
   
 .header {
     text-align: center;
-    /* text-transform: uppercase; */
     padding: 32px;
     background-color: #0a0a23;
     color: #fff;
@@ -104,21 +94,6 @@ body {
     color:tan;
   }
 
-  /* .main-container {
-    display: flex;
-    width: 100%;
-  }
-
-
-  .container-a {
-    width: 65%;
-    padding: 1rem;
-  } */
-
-/*  open task: container for different ratio (i.e. 35/65) 
-    or simply an image being on the left side 
-    2-3 variations */
-
   .container-a p {
     width: 90%;
     max-width: 1240px;
@@ -128,9 +103,9 @@ body {
 
   .main-container {
     display: flex;
-    flex-wrap: wrap;         /* allows wrapping on small screens */
+    flex-wrap: wrap;
     width: 100%;
-    box-sizing: border-box;  /* prevent overflow from padding */
+    box-sizing: border-box;
   }
   
   /* Container A (text section) */
@@ -146,7 +121,7 @@ body {
     max-height: 400px;
     padding: 1rem;
     box-sizing: border-box;
-    background-image: url('images/banner.jpg'); /* change to your path */
+    background-image: url('images/banner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -156,7 +131,7 @@ body {
   @media (max-width: 968px) {
     .container-a,
     .container-b {
-      width: 100%;   /* Stack vertically */
+      width: 100%; 
     }
   
     .container-b {
@@ -228,8 +203,8 @@ li{
   
   .name-container {
     display: inline-block;
-    width: 4ch;           /* Enough to fit "思烨" or scrambled text */
-    height: 1.2em;         /* Lock the height of the container */
+    width: 4ch; 
+    height: 1.2em;
     overflow: hidden;
     vertical-align: middle;
     text-align: center;
@@ -243,10 +218,10 @@ li{
   }
   .name-wrapper {
     display: inline-block;
-    width: 4ch; /* Matches longest text (思烨 or Eric) */
+    width: 4ch;
     text-align: center;
     vertical-align: baseline;
-    font-family: Gurmukhi Sangam MN; /* Optional for smoother scrambling */
+    font-family: Gurmukhi Sangam MN;
     line-height: 1;
     padding: 0 2px;
   }
@@ -257,9 +232,9 @@ li{
 
 .small-map {
     width: 100%;
-    max-width: 800px; /* optional max width */
+    max-width: 800px;
     height: auto;
-    margin: 0 auto;   /* center the map horizontally */
+    margin: 0 auto; 
 }  
 .small-map svg {
     width: 100%;
@@ -268,9 +243,6 @@ li{
 }
 
 svg path {
-    /* stroke: #333; */
-    /* stroke-width: 0.5;
-    fill: #ccc; */
     transition: fill 0.3s;
   }
 
@@ -279,11 +251,6 @@ svg path {
   .visited { fill: #fdd835 !important; }
   .passed-through { fill: #4fc3f7 !important; }
   .want-to-visit { fill: #81c784 !important; }
-
-/* path.visited        { fill: #fdd835 !important; }
-path.want-to-visit  { fill: #81c784 !important; }
-path.passed-through { fill: #4fc3f7 !important; }
-path.lived-in       { fill: #ff6f61 !important; } */
 
   /* Legend styles */
   .legend {
@@ -329,15 +296,12 @@ path.lived-in       { fill: #ff6f61 !important; } */
 
   .content-center {
     max-width: 850px;
-    margin: 0 auto;       /* Centers horizontally */
-    padding: 20px;         /* Adds space inside the box */
+    margin: 0 auto;
+    padding: 20px;
     box-sizing: border-box;
-    text-align: left;      /* Optional: use 'center' if you want text centered */
+    text-align: left;
   }
 
-  
-
-  /* From Uiverse.io by alexmaracinaru */ 
 .cta {
   border: none;
   background: none;
