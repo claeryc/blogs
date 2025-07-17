@@ -17,42 +17,26 @@
     },
     {
       "id": 3,
-      "title": "Recent Projects that I made + upcoming ones!",
-      "topic": ["#coding", "#games"],
-      "link": "https://design.tutsplus.com/articles/envato-tuts-community-challenge-created-by-you-july-edition--cms-26724",
-      "image": "firstgame.png",
-      "description": "Welcome to our monthly feature of fantastic tutorial results created by you, the Envato Tuts+ community!"
-    },
-    {
-      "id": 4,
       "title": "My Life in China - 1st Semester Recap",
       "topic": ["#travel", "#student life"],
       "link": "https://webdesign.tutsplus.com/tutorials/how-to-code-a-scrolling-alien-lander-website--cms-26826",
       "image": "pic5.jpeg",
-      "description": "We’ll be putting things together so that as you scroll down from the top of the page you’ll see an “Alien Lander”."
+      "description": "From an idea I once had a couple of years ago, to actually fulfilling it. This is the first out of 2 parts about my life in China."
     },
     {
-      "id": 5,
-      "title": "TTRPG - Virtual RPG - a new Home Brew project",
-      "topic": ["#travel", "#student life"],
-      "link": "https://design.tutsplus.com/tutorials/stranger-things-inspired-text-effect--cms-27139",
-      "image": "ttrpg.webp",
-      "description": "We started to build our first homebrew version of our Dungeons and Dragons TTRPG. Have a sneek-peek in the process and be one of the first, to play!"
-    },
-    {
-      "id": 6,
-      "title": "Cyclethon - 50km cycling in China",
+      "id": 4,
+      "title": "Semester Break - Coding Projects",
       "topic": ["#travel", "#student life"],
       "link": "https://photography.tutsplus.com/articles/5-inspirational-business-portraits-and-how-to-make-your-own--cms-27338",
       "image": "pic6.jpg",
-      "description": "We’ll be putting things together so that as you scroll down from the top of the page you’ll see an “Alien Lander”."
+      "description": "Now that I have more time to focus on things other than mandarin learning, I switch my focus on practicing coding."
     },
     {
-      "id": 7,
-      "title": "My Semester Break - Recap of my Life and Experiences in China",
+      "id": 5,
+      "title": "Side Quests, [unreleased article]",
       "topic": ["#travel", "#student life", "#ttrpg"],
       "link": "https://webdesign.tutsplus.com/articles/notes-from-behind-the-firewall-the-state-of-web-design-in-china--cms-22281",
-      "image": "secondgame.png",
-      "description": "We’ll be putting things together so that as you scroll down from the top of the page you’ll see an “Alien Lander”."
+      "image": "worldmap.jpg",
+      "description": "This article has not been released yet, please wait for a bit longer for its release!"
     }
   ]

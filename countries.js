@@ -11,6 +11,7 @@ document.getElementById('NL').classList.add('visited');
 document.getElementById('ES').classList.add('visited');
 document.getElementById('FR').classList.add('visited');
 document.getElementById('IT').classList.add('visited');
+document.getElementById('EG').classList.add('visited');
 document.getElementById('IT-2').classList.add('visited');
 document.getElementById('IT-3').classList.add('visited');
 document.getElementById('FR-2').classList.add('visited');

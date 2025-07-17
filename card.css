@@ -9,6 +9,7 @@
             flex-wrap: wrap;
             justify-content: space-evenly;
             gap: 1rem;
+            grid-gap: 40px;
           }
           
           .card-container {
@@ -22,7 +23,7 @@
               flex: 1 1 calc(50% - 1rem);
             }
           }
-          
+
           @media (max-width: 600px) {
             .card-container {
               flex: 1 1 100%;
