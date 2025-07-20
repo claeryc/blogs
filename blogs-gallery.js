@@ -1,5 +1,5 @@
 let currentIndex = 0;
-const postsPerPage = 5; // Only used on index (home) page
+const postsPerPage = 5;
 let allPosts = [];
 let filteredPosts = [];
 
@@ -45,19 +45,22 @@ function createArticleCard(post, index) {
       ? post.topic.map(t => `<span class="topic-badge">${t}</span>`).join(' ')
       : `<span class="topic-badge">${post.topic}</span>`;
   
-    item.innerHTML = `
-      <a href="${post.link}" class="card-bp" target="_blank">
-        <div class="thumb" style="background-image: url('./images/${post.image}');"></div>
+      item.innerHTML = `
+      <div class="card-bp">
+        <a href="${post.link}" target="_blank">
+          <div class="thumb" style="background-image: url('./images/${post.image}');"></div>
+        </a>
         <article>
           <h1>${post.title}</h1>
-          ${post.description ? `<p>${post.description}</p>` : ""}
+          <p>${post.description.length > 85 ? post.description.slice(0, 85) + " ..." : post.description}</p>
           <div class="topic-container">${topicHTML}</div>
         </article>
-      </a>
+      </div>
     `;
     return item;
   }
 
+  // ${post.description ? `<p>${post.description}</p>` : ""}
 
 // Display posts with applied limit
 function displayPosts() {
@@ -95,13 +98,22 @@ function applyFilters() {
 fetch('articles.json') // Replace file name as needed (DB)
   .then(res => res.json())
   .then(data => {
+    console.log("Loaded JSON data:", data);
     data.sort((a, b) => b.id - a.id); // Sort newest to oldest
+    console.log("Loaded JSON data:", data);
 
     allPosts = data;
     filteredPosts = [...allPosts];
-
+    
     renderTopicFilters(getUniqueTopics(allPosts));
-    displayPosts();
+    
+    // Ensure we show posts even if less than 5
+    if (filteredPosts.length <= postsPerPage && isHomePage) {
+      displayPosts();
+      if (loadMoreButton) loadMoreButton.style.display = "none";
+    } else {
+      displayPosts();
+    }
   })
   .catch(err => console.error('Failed to load posts:', err));
 
